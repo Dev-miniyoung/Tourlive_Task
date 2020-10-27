@@ -15,7 +15,10 @@ import DetailScreen from "../routes/Detail";
 export default () => (
   <Router>
     <>
-      <Layout className="layout" style={{ minHeight: "100vh" }}>
+      <Layout
+        className="layout"
+        style={{ minHeight: "100vh", background: "none" }}
+      >
         <Header />
         <Switch>
           <Route path="/" exact component={HomeScreen} />
