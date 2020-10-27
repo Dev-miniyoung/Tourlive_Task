@@ -59,7 +59,10 @@ const DetailCard = ({ data }) => (
                   item.price.length - 3
                 )} 원     평점 : ${item.rate} / 5 `}
               />
-              {item.content}
+              <div>
+                <p style={{ fontSize: 16, fontWeight: "bold" }}>내용</p>
+                <div dangerouslySetInnerHTML={{ __html: item.content }}></div>
+              </div>
             </List.Item>
           );
         }}
